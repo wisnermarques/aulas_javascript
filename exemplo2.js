@@ -27,7 +27,7 @@ function mediaNotas() {
       document.getElementById("result").innerHTML = media;
     }
 
-  // aprovado *se* media for maior ou igual 6 senão reprovado
+  // aprovado *se* média for maior ou igual 6 senão reprovado
   if (media >= 6) {
     document.getElementById("status").innerHTML = "APROVADO";
   } else if (media >= 5) {

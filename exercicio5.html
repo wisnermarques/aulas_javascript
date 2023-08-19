@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peso Ideal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="text-center">Sistema que Cálcula o Peso Ideal</h1>
+    <form class="bg-info-subtle rounded p-2">
+      <label class="form-label fw-bold" for="altura">Altura:</label>
+      <input
+        type="number"
+        id="altura"
+        class="form-control"
+        placeholder="Digite a altura"
+      />
+      <br />
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="sexo" id="masc" value="M" checked>
+        <label class="form-check-label" for="sexo">
+          Masculino
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="sexo" id="fem" value="F">
+        <label class="form-check-label" for="sexo">
+          Feminino
+        </label>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <input
+          type="button"
+          value="Peso Ideal"
+          onclick="calculaPesoIdeal()"
+          class="btn btn-secondary mt-3"
+        />
+        <input
+          type="reset"
+          class="btn btn-danger mt-3"
+          value="Limpar"
+          onclick="limpar()"
+        />
+      </div>
+    </form>
+    <hr />
+     <p class="text-center mt-3">
+      <strong>Seu peso ideal é:</strong>
+      <span class="badge bg-primary fs-4" id="result"></span>
+    </p>
+    <script src="exercicio5.js"></script>
+  </body>
+</html>
